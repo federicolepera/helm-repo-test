@@ -9,6 +9,6 @@ entries:
     name: krateo-test
     type: application
     urls:
-    - https://github.com/federicolepera/helm-repo-test/my-helm-repo/raw/main/charts/krateo-test-0.1.0.tgz
+    - https://github.com/federicolepera/helm-repo-test/raw/main/charts/krateo-test-0.1.0.tgz
     version: 0.1.0
 generated: "2025-01-28T11:43:30.090087+01:00"

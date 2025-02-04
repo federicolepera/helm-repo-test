@@ -1,1 +1,29 @@
-TEST TEST
+topology:
+  nodes:
+    - id: mytimcluster
+      metadata:
+        description: "Cluster principale per l'ambiente" #not required
+      ref:
+        kind: MyTimCluster #required
+        name: "*-cluster-*" #required
+      readinessCriteria: 
+        condition: 
+          expression: ".status.key"
+          operator: Equals 
+          value: "Ready"
+    
+    - id: mystorage
+      metadata:
+        description: "Storage associato alle applicazioni"
+      ref:
+        kind: MyTimStorage
+        name: "*"
+
+    - id: mytimapplication
+      metadata:
+        description: "Applicazione principale con dipendenze"
+      ref:
+        kind: "*"
+        name: "my-*-app"
+      dependencies:
+        - mytimcluster #Dependecies of this node, not required

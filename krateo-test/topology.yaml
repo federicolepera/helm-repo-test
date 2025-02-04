@@ -3,9 +3,6 @@ topology:
     - id: mytimcluster
       metadata:
         description: "Cluster principale per l'ambiente" #not required
-      ref:
-        kind: MyTimCluster #required
-        name: "*-cluster-*" #required
       readinessCriteria: 
         condition: 
           expression: ".status.key"

@@ -4,7 +4,7 @@ topology:
       metadata:
         description: "Storage associato alle applicazioni"
       ref:
-        kind: "*"
+        kind: "*/Deployment"
         name: "my-*"
 
     - id: mytimapplication

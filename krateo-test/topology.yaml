@@ -5,4 +5,4 @@ topology:
         description: "Storage associato alle applicazioni"
       ref:
         kind: "Deployment"
-        name: "*"
+        name: "my-*"

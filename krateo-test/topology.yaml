@@ -6,3 +6,12 @@ topology:
       ref:
         kind: "*"
         name: "my-*"
+
+    - id: mytimapplication
+      metadata:
+        description: "Applicazione principale con dipendenze"
+      ref:
+        kind: "*"
+        name: "my-*-app"
+      dependencies:
+        - deployment #Dependecies of this node, not required

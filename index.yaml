@@ -3,7 +3,7 @@ entries:
   krateo-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T16:39:50.193258+01:00"
+    created: "2025-02-06T16:42:14.486617+01:00"
     description: A Helm chart for Kubernetes
     digest: 215ed63979350692a44fa38da3a6499499490786db3727bfb8ff3826a9ff2f96
     name: krateo-test
@@ -13,7 +13,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T16:39:50.193683+01:00"
+    created: "2025-02-06T16:42:14.487158+01:00"
     description: A Helm chart for Kubernetes
     digest: 215ed63979350692a44fa38da3a6499499490786db3727bfb8ff3826a9ff2f96
     name: krateo-test
@@ -21,4 +21,4 @@ entries:
     urls:
     - https://github.com/federicolepera/helm-repo-test/raw/main/charts/krateo-test-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-06T16:39:50.192409+01:00"
+generated: "2025-02-06T16:42:14.486204+01:00"

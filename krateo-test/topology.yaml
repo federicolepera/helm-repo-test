@@ -4,5 +4,5 @@ topology:
       metadata:
         description: "Storage associato alle applicazioni"
       ref:
-        kind: "Deployment"
+        kind: "apps/*/*"
         name: "my-*"

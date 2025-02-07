@@ -12,6 +12,6 @@ topology:
       ref:
         kind: "apps/*/Deployment"
         name: "deps"
-      dependecies:
+      dependencies:
         - deployment
       

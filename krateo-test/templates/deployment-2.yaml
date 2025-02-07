@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: no-node-deployment
+spec:
+  replicas: {{ .Values.replicaCount }}  # Usa il valore di replicaCount dal file values.yaml
+  selector:
+    matchLabels:
+      app: no-node-deployment
+  template:
+    metadata:
+      labels:
+        app: no-node-deployment
+    spec:
+      containers:
+        - name: my-container
+          image: nginx:latest  # Immagine di esempio, puoi cambiarla
+          ports:
+            - containerPort: 80
+

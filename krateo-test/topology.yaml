@@ -6,3 +6,12 @@ topology:
       ref:
         kind: "apps/*/Deployment"
         name: "my-*"
+    - id: deployment2
+      metadata:
+        description: "test"
+      ref:
+        kind: "apps/*/Deployment"
+        name: "deps"
+      dependecies:
+        - deployment
+      

@@ -12,19 +12,12 @@ topology:
     - id: deployment2
       metadata:
         description: "test"
+      properties:
+        spec:
+          disk:
+            size: "100GB"
       ref:
         kind: "apps/*/Deployment"
         name: "deps"
-      dependencies:
-        - deployment3
-
-    - id: deployment3
-      metadata:
-        description: "test"
-      ref:
-        kind: "apps/*/Deployment"
-        name: "no-node-deployment"
-      dependencies:
-        - deployment
 
       

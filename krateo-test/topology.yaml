@@ -6,6 +6,8 @@ topology:
       ref:
         kind: "apps/*/Deployment"
         name: "my-*"
+      dependencies:
+        - deployment2
     - id: deployment2
       metadata:
         description: "test"

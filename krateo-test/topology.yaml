@@ -12,6 +12,10 @@ topology:
     - id: deployment2
       metadata:
         description: "test"
+      properties:
+        spec:
+          - disk: "deployment-3.values"
+          - disk: "deployment-3.values"
       ref:
         kind: "apps/*/Deployment"
         name: "deps"

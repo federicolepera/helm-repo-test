@@ -6,16 +6,12 @@ topology:
       ref:
         kind: "apps/*/Deployment"
         name: "my-*"
+      dependencies:
+        - deployment2
 
     - id: deployment2
       metadata:
         description: "test"
-      properties:
-        spec:
-          disk:
-            size: "deployment-3.spec.replicas"
-          test:
-            test: "deployment.spec.replicas"
       ref:
         kind: "apps/*/Deployment"
         name: "deps"

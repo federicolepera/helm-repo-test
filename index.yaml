@@ -1,24 +1,3 @@
 apiVersion: v1
-entries:
-  krateo-test:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-02-10T10:48:33.454138+01:00"
-    description: A Helm chart for Kubernetes
-    digest: aa6b6e0b745efb091ca14bb5f335a2d330672aea8f1318144f4af10c148dd352
-    name: krateo-test
-    type: application
-    urls:
-    - https://github.com/federicolepera/helm-repo-test/raw/main/krateo-test-0.1.0.tgz
-    version: 0.1.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-02-10T10:48:33.458614+01:00"
-    description: A Helm chart for Kubernetes
-    digest: aa6b6e0b745efb091ca14bb5f335a2d330672aea8f1318144f4af10c148dd352
-    name: krateo-test
-    type: application
-    urls:
-    - https://github.com/federicolepera/helm-repo-test/raw/main/charts/krateo-test-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-02-10T10:48:33.453779+01:00"
+entries: {}
+generated: "2025-02-10T10:54:39.8401+01:00"

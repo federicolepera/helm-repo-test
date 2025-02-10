@@ -15,7 +15,9 @@ topology:
       properties:
         spec:
           - disk: "deployment-3.values"
+            name: test
           - disk: "deployment-3.values"
+            name: test2
       ref:
         kind: "apps/*/Deployment"
         name: "deps"

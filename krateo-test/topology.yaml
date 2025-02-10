@@ -15,9 +15,14 @@ topology:
       properties:
         spec:
           disk:
-            size: "100GB"
+            size: "deployment-3.spec.replicas"
       ref:
         kind: "apps/*/Deployment"
         name: "deps"
 
-      
+    - id: deployment-3
+      metadata:
+        description: "Storage associato alle applicazioni"
+      ref:
+        kind: "apps/*/Deployment"
+        name: "no-node-deployment"

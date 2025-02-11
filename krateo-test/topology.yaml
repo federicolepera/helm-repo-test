@@ -28,3 +28,8 @@ topology:
       ref:
         kind: "apps/*/Deployment"
         name: "no-node-deployment"
+      readinessCriteria: 
+        condition: 
+          expression: ".status.readyReplicas"
+          operator: Equals 
+          value: "1"
